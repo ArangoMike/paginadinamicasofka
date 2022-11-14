@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario{
+
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    max-width: 550px;
+    border-radius: 1em;
+    box-shadow: 4px 12px 25px 12px #566573;
+    padding: 3.5em 3.5em;
+}
+
+
+.form_container{
+    width:100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto 50% auto;
+
+}
+
+.form_input{
+    grid-column: 1 / 4;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    border: none;
+    background-color: #e5e5e5;
+    border-radius: 0.8em;
+
+}
+
+.form_input:focus {
+    border: 3px solid #0033cc;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.form_boton{
+    grid-column: 2 / 3;
+    border: none;
+    font-size: 1rem;
+    background-color: rgba(238,120,47,255);
+    color: #ffffff;
+    padding: 0.8em 0;
+    border-radius: 3em;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 1px 4px 7px 0.1px #566573;
+
+}
+
+.form_boton:hover {
+    background: #00004c;
+}
+
+.form_resultado{
+    grid-column: 1 / 4;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    border: none;
+    border-radius: 0.8em;
+
+}
+
